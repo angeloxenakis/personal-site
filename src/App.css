@@ -1,0 +1,259 @@
+.App {
+  font-family: Helvetica;
+  background-color: rgba(255,255,255, 0.8);
+  height: 100vh;
+}
+
+body {
+  background-image: url('./assets/hero.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.nav {
+  color: black;
+  display: flex;
+  margin: 0px;
+  padding: 16px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-btn {
+  text-align: center;
+  width: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.nav-btn-clicked {
+  text-align: center;
+  width: 70px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 16px;
+  border-bottom: 1px solid black;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  padding: 48px;
+  margin: auto;
+  width: 100%;
+}
+
+hr {
+  width: 30%;
+  margin: 48px 0px 48px 0px;
+}
+
+h1 {
+  font-size: 80px;
+  margin:0px;
+}
+
+h2 {
+  font-size: 40px;
+  margin:0px;
+}
+
+.bio a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 0px;
+}
+
+.large-text {
+  font-size: 48px;
+}
+
+.medium-text {
+  font-size: 32px;
+}
+
+.small-text {
+  font-size: 20px;
+}
+
+.tiny-text {
+  font-size: 8px;
+}
+
+.hero p, .hero h1 {
+  font-weight: bold;
+  color:black;
+}
+
+.bio {
+  margin: 24px 0px 24px 0px;
+}
+
+.fight-img {
+  background-image: url('./assets/fight.jpeg');
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+}
+
+.port-circle {
+  text-align: center;
+  color:  black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.cat-row-2 {
+  display: flex;
+}
+
+.cat-row-2 h4 {
+  margin: 144px;
+}
+
+.link-tree{ 
+  display: flex;
+  color:  black;
+}
+
+.link-tree-left{
+  padding: 0px 40px 0px 40px;
+  border-right: 1px solid black;
+}
+
+.link-tree-right{
+  padding: 0px 40px 0px 40px;
+}
+
+.link-tree-logo {
+  margin: 0px 32px 80px 32px;
+  text-align:center;
+}
+
+.link-tree-logo-right {
+  margin: 90px 32px 80px 32px;
+  text-align:center;
+}
+
+h5 {
+  margin-top: 8px;
+}
+
+.linkedin-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/linkedin-logo.png');
+  background-size: contain;
+  ;
+}
+
+.medium-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/medium-logo.png');
+  background-size: contain;
+  ;
+}
+
+.github-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/github-logo.svg');
+  background-size: contain;
+  ;
+}
+
+.portfolio-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: black;
+  background-size: contain;
+  ;
+}
+
+.dribbble-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/dribbble-logo.svg');
+  background-size: contain;
+  ;
+}
+
+.behance-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/behance-logo.png');
+  background-size: contain;
+  ;
+}
+
+.youtube-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/youtube-logo.png');
+  background-size: contain;
+  ;
+}
+
+.spotify-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/spotify-logo.png');
+  background-size: cover;
+  ;
+}
+
+.applemusic-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/applemusic-logo.png');
+  background-size: contain;
+  ;
+}
+
+.soundcloud-panel {
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  background-image: url('./assets/soundcloud-logo.png');
+  background-size: contain;
+  ;
+}
