@@ -14,7 +14,7 @@ body {
 }
 
 .nav {
-  color: black;
+  color: #010101;
   display: flex;
   margin: 0px;
   padding: 16px;
@@ -23,7 +23,7 @@ body {
 .nav a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #010101;
 }
 
 .nav-btn {
@@ -40,7 +40,7 @@ body {
   font-size: 12px;
   font-weight: bold;
   padding: 16px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #010101;
 }
 
 .container {
@@ -69,16 +69,18 @@ hr {
 h1 {
   font-size: 80px;
   margin:0px;
+  color: #010101;
 }
 
 h2 {
   font-size: 56px;
   margin:16px 0px 16px 0px;
+  color: #010101;
 }
 
 .bio a {
   text-decoration: none;
-  color: black;
+  color: #010101;
 }
 
 p {
@@ -105,7 +107,7 @@ p {
 
 .hero p, .hero h1 {
   font-weight: bold;
-  color:black;
+  color:#010101;
 }
 
 .bio {
@@ -117,22 +119,8 @@ p {
 }
 
 .portfolio {
-  display: flex;
-  justify-content: center;
 }
 
-.port-circle {
-  text-align: center;
-  color:  black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
-  width: 600px;
-  border-radius: 50%;
-  background-color: black;
-}
 
 .link-tree-container {
   margin: auto;
@@ -148,14 +136,14 @@ p {
 
 .link-tree{ 
   display: flex;
-  color:  black;
+  color:  #010101;
   justify-content: center;
   margin-top: 56px;
 }
 
 .link-tree a {
   text-decoration: none;
-  color: black;
+  color: #010101;
 }
 
 .link-tree-left{
@@ -219,7 +207,7 @@ h5 {
   height: 60px;
   width: 60px;
   border-radius: 50%;
-  background-color: black;
+  background-color: #010101;
   background-size: contain;
   ;
 }
