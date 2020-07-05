@@ -1,6 +1,6 @@
 .App {
   font-family: Helvetica;
-  background-color: rgba(255,255,255, 0.8);
+  background-color: rgba(255,255,255, 0.7);
   height: 100vh;
   overflow: scroll;
 }
@@ -63,7 +63,9 @@ body {
 
 hr {
   width: 30%;
-  margin: 8px 0px 8px 0px;
+  margin:auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 h1 {
@@ -74,8 +76,22 @@ h1 {
 
 h2 {
   font-size: 56px;
-  margin:16px 0px 16px 0px;
+  margin:16px 0px 0px 0px;
   color: #010101;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0px 0px 0px 0px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .bio a {
@@ -110,8 +126,33 @@ p {
   color:#010101;
 }
 
+.eng-tile {
+  padding: 32px 0px 64px 0px;
+}
+
+.eng-tile-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.eng-tile-info a {
+  color: #010101;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .bio {
   margin: 24px 0px 24px 0px;
+}
+
+.eng-tile-content {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+}
+
+.eng-tile-info {
+  padding: 0px 0px 0px 24px;
 }
 
 .fight-img {
@@ -264,4 +305,326 @@ h5 {
   background-image: url('./assets/soundcloud-logo.png');
   background-size: contain;
   ;
+}
+
+.video {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 800px) {
+  .App {
+    font-family: Helvetica;
+    background-color: rgba(255,255,255, 0.7);
+    height: 100vh;
+    overflow: scroll;
+  }
+  
+  body {
+    background-image: url('./assets/hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  }
+  
+  .nav {
+    color: #010101;
+    display: flex;
+    margin: 0px;
+    padding: 16px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #010101;
+  }
+  
+  .nav-btn {
+    text-align: center;
+    width: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px;
+  }
+  
+  .nav-btn-clicked {
+    text-align: center;
+    width: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px;
+    border-bottom: 1px solid #010101;
+  }
+  
+  .container {
+    margin: auto;
+    width: 70%;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero {
+    padding: 48px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  hr {
+    width: 30%;
+    margin:auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  h1 {
+    font-size: 56px;
+    margin:0px;
+    color: #010101;
+  }
+  
+  h2 {
+    font-size: 56px;
+    margin:16px 0px 0px 0px;
+    color: #010101;
+  }
+  
+  h3 {
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  h4 {
+    font-size: 28px;
+  }
+  
+  h5 {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .bio a {
+    font-size: 32px;
+    text-decoration: none;
+    color: #010101;
+  }
+  
+  p {
+    font-size: 32px;
+    margin: 0px;
+  }
+  
+  .large-text {
+    font-size: 32px;
+    margin: 8px 0px 8px 0px;
+  }
+  
+  .medium-text {
+    font-size: 32px;
+  }
+  
+  .small-text {
+    font-size: 20px;
+    margin: 8px 0px 8px 0px;
+  }
+  
+  .tiny-text {
+    font-size: 8px;
+  }
+  
+  .hero p, .hero h1 {
+    font-weight: bold;
+    color:#010101;
+  }
+  
+  .eng-tile {
+    padding: 32px 0px 64px 0px;
+  }
+  
+  .eng-tile-info {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .eng-tile-info a {
+    color: #010101;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .bio {
+    margin: 24px 0px 24px 0px;
+  }
+  
+  .eng-tile-content {
+    display: flex;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  .eng-tile-info {
+    padding: 0px 0px 0px 24px;
+  }
+  
+  .fight-img {
+    background-image: url('./assets/fight.jpeg');
+  }
+  
+  .portfolio {
+  }
+  
+  
+  .link-tree-container {
+    margin: auto;
+  }
+  
+  .cat-row-2 {
+    display: flex;
+  }
+  
+  .cat-row-2 h4 {
+    margin: 144px;
+  }
+  
+  .link-tree{ 
+    display: flex;
+    color:  #010101;
+    justify-content: center;
+    margin-top: 56px;
+  }
+  
+  .link-tree a {
+    text-decoration: none;
+    color: #010101;
+  }
+  
+  .link-tree-left{
+    padding: 0px 56px 0px 56px;
+    border-right: 1px solid rgba(0,0,0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .link-tree-right{
+    padding: 0px 56px 0px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .link-tree-logo {
+    margin: 40px 48px 40px 48px;
+    text-align:center;
+  }
+  
+  .link-tree-logo-right {
+    margin: 90px 32px 80px 32px;
+    text-align:center;
+  }
+  
+  h5 {
+    margin-top: 8px;
+  }
+  
+  .linkedin-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/linkedin-logo.png');
+    background-size: contain;
+    ;
+  }
+  
+  .medium-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/medium-logo.png');
+    background-size: contain;
+    ;
+  }
+  
+  .github-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/github-logo.svg');
+    background-size: contain;
+    ;
+  }
+  
+  .portfolio-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #010101;
+    background-size: contain;
+    ;
+  }
+  
+  .dribbble-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/dribbble-logo.svg');
+    background-size: contain;
+    ;
+  }
+  
+  .behance-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/behance-logo.png');
+    background-size: contain;
+    ;
+  }
+  
+  .youtube-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/youtube-logo.png');
+    background-size: contain;
+    ;
+  }
+  
+  .spotify-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/spotify-logo.png');
+    background-size: cover;
+    ;
+  }
+  
+  .applemusic-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/applemusic-logo.png');
+    background-size: contain;
+    ;
+  }
+  
+  .soundcloud-panel {
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    background-image: url('./assets/soundcloud-logo.png');
+    background-size: contain;
+    ;
+  }
+  
+  .video {
+    width: 400px;
+  }
 }
