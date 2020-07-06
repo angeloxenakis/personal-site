@@ -5,7 +5,6 @@ export function LinkTree() {
     return (
         <div className="link-tree-container">
             <h2>Connect</h2>
-            <h4>angeloxenakis@gmail.com | 346-262-5807</h4>
             <div className="link-tree">
                 <div className="link-tree-left">
                     <div className="link-tree-logo">

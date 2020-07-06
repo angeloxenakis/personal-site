@@ -5,7 +5,7 @@ export function About() {
     return (
         <div className="about">
             <div className="hero">
-                <h2>Angelo Xenakis</h2>
+                <h1>Angelo Xenakis</h1>
                 <div className="bio">
                     <p className="large-text"><a href="">Software</a> &</p>
                     <p className="large-text"><a href="#">Design</a> &</p>
