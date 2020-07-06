@@ -7,7 +7,7 @@
 
 body {
   background-image: url('./assets/hero.jpeg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -114,7 +114,8 @@ p {
 
 .small-text {
   font-size: 20px;
-  margin: 8px 0px 8px 0px;
+  line-height: 1.6;
+  padding: 0px 0px 20px 0px;
 }
 
 .tiny-text {
@@ -360,20 +361,15 @@ h5 {
   
   .container {
     margin: auto;
-    width: 70%;
+    width: 85%;
   }
   
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   
   .hero {
-    padding: 48px;
+    padding: 0px;
     margin: auto;
-    width: 100%;
   }
   
   hr {
@@ -384,13 +380,13 @@ h5 {
   }
   
   h1 {
-    font-size: 56px;
+    font-size: 48px;
     margin:0px;
     color: #010101;
   }
   
   h2 {
-    font-size: 56px;
+    font-size: 60px;
     margin:16px 0px 0px 0px;
     color: #010101;
   }
@@ -421,8 +417,8 @@ h5 {
   }
   
   .large-text {
-    font-size: 32px;
-    margin: 8px 0px 8px 0px;
+    font-size: 40px;
+    margin: 0px 0px 0px 0px;
   }
   
   .medium-text {
@@ -460,7 +456,7 @@ h5 {
   }
   
   .bio {
-    margin: 24px 0px 24px 0px;
+    margin: 40px 0px 40px 0px;
   }
   
   .eng-tile-content {
