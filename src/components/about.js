@@ -13,7 +13,7 @@ export function About() {
                     <p className="large-text"><a href="#">Fighting</a> &</p>
                     <p className="large-text"><a href="https://medium.com/@angeloxenakis">Articles</a></p>
                 </div>
-                <p className="small-text">...And calling my blog posts articles because it feels more distigushed</p>
+                <p className="small-text">And calling my blog posts articles because it feels more distinguished</p>
             </div>
             <hr></hr>
             <div className="tri-img">
