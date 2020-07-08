@@ -1,10 +1,10 @@
 import React from 'react'
 import { linkedIn } from '../assets/linkedin-logo.png'
 
-export function LinkTree() {
+export function Connect() {
     return (
         <div className="link-tree-container">
-            <h2>Connect</h2>
+            <h1>Connect</h1>
             <div className="link-tree">
                 <div className="link-tree-left">
                     <div className="link-tree-logo">
