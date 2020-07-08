@@ -49,14 +49,13 @@ body {
 }
 
 .about {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .hero {
-  padding: 48px;
   margin: auto;
   width: 100%;
 }
@@ -64,19 +63,19 @@ body {
 hr {
   width: 30%;
   margin:auto;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 h1 {
   font-size: 80px;
-  margin:0px;
+  margin:40px 0px 0px 0px;
   color: #010101;
 }
 
 h2 {
   font-size: 56px;
-  margin:16px 0px 0px 0px;
+  margin:24px 0px 0px 0px;
   color: #010101;
 }
 
@@ -113,6 +112,7 @@ p {
 }
 
 .small-text {
+  width: 35%;
   font-size: 20px;
   line-height: 1.6;
   padding: 0px 0px 20px 0px;
@@ -128,7 +128,7 @@ p {
 }
 
 .eng-tile {
-  padding: 32px 0px 64px 0px;
+  padding: 16px 0px 16px 0px;
 }
 
 .eng-tile-info {
@@ -153,7 +153,6 @@ p {
 }
 
 .eng-tile-info {
-  padding: 0px 0px 0px 24px;
 }
 
 .fight-img {
@@ -180,7 +179,7 @@ p {
   display: flex;
   color:  #010101;
   justify-content: center;
-  margin-top: 56px;
+  margin-top: 24px;
 }
 
 .link-tree a {
@@ -189,15 +188,15 @@ p {
 }
 
 .link-tree-left{
-  padding: 0px 56px 0px 56px;
-  border-right: 1px solid rgba(0,0,0, 0.3);
+  padding: 0px 48px 0px 56px;
+  /* border-right: 1px solid rgba(0,0,0, 0.3); */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .link-tree-right{
-  padding: 0px 56px 0px 56px;
+  padding: 0px 48px 0px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -311,6 +310,7 @@ h5 {
 .video {
   width: 560px;
   height: 315px;
+  margin-right: 24px;
 }
 
 @media (max-width: 800px) {
@@ -412,7 +412,7 @@ h5 {
   }
   
   p {
-    font-size: 32px;
+    font-size: 20px;
     margin: 0px;
   }
   
@@ -444,7 +444,7 @@ h5 {
   }
   
   .eng-tile-info {
-    font-size: 18px;
+    font-size: 8px;
     line-height: 1.5;
   }
   
@@ -452,7 +452,7 @@ h5 {
     color: #010101;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .bio {
@@ -461,11 +461,11 @@ h5 {
   
   .eng-tile-content {
     display: flex;
+    flex-direction: column;
     margin: 0px 0px 0px 0px;
   }
   
   .eng-tile-info {
-    padding: 0px 0px 0px 24px;
   }
   
   .fight-img {
@@ -621,6 +621,6 @@ h5 {
   }
   
   .video {
-    width: 400px;
+    width: 100%;
   }
 }

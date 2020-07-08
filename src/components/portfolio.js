@@ -49,7 +49,7 @@ export function Portfolio() {
                 </div>
             </div>
             <hr></hr>
-            <h2>Design Portfolio</h2>
+            <h1>Design Portfolio</h1>
             <h4>Slow Ride Trade Co Series</h4>
             <hr></hr>
             <h4>Fight Cult Series</h4>
