@@ -4,9 +4,9 @@ export function Portfolio() {
     return (
         <div className="portfolio">
             <div className="eng-port">
-                <h2>Engineering Portfolio</h2>
+                <h1>Engineering Portfolio</h1>
                 <div className="eng-tile">
-                    <h3>XenLoop-5T</h3>
+                    <h2>XenLoop-5T</h2>
                     <h5>Software Audio Loop Station | React, NodeJS</h5>
                     <div className="eng-tile-content">
                         <div className="eng-tile-hero">
@@ -28,7 +28,7 @@ export function Portfolio() {
                 </div>
                 <hr></hr>
                 <div className="eng-tile">
-                    <h3>Mars Weather App</h3>
+                    <h2>Mars Weather App</h2>
                     <h5>Up to Date Mars Weather Data | React, Redux, Ruby on Rails</h5>
                     <div className="eng-tile-content">
                         <div className="eng-tile-hero">
@@ -48,8 +48,10 @@ export function Portfolio() {
                     </div>
                 </div>
             </div>
+            <hr></hr>
             <h2>Design Portfolio</h2>
             <h4>Slow Ride Trade Co Series</h4>
+            <hr></hr>
             <h4>Fight Cult Series</h4>
         </div>
     )
