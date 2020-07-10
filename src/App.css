@@ -69,13 +69,13 @@ hr {
 
 h1 {
   font-size: 80px;
-  margin:40px 0px 0px 0px;
+  margin:16px 0px 0px 0px;
   color: #010101;
 }
 
 h2 {
   font-size: 56px;
-  margin:24px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
   color: #010101;
 }
 
@@ -105,6 +105,7 @@ p {
 .large-text {
   font-size: 56px;
   margin: 8px 0px 8px 0px;
+  cursor: pointer;
 }
 
 .medium-text {
