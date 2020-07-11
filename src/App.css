@@ -381,13 +381,13 @@ h5 {
   }
   
   h1 {
-    font-size: 60px;
-    margin-top:16px;
+    font-size: 56px;
+    margin:0px 0px 0px 0px;
     color: #010101;
   }
   
   h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin:16px 0px 0px 0px;
     color: #010101;
   }
@@ -413,12 +413,12 @@ h5 {
   }
   
   p {
-    font-size: 20px;
+    font-size: 24px;
     margin: 0px;
   }
   
   .large-text {
-    font-size: 40px;
+    font-size: 32px;
     margin: 0px 0px 0px 0px;
   }
   
@@ -427,7 +427,8 @@ h5 {
   }
   
   .small-text {
-    font-size: 20px;
+    width: 100%;
+    font-size: 16px;
     margin: 8px 0px 8px 0px;
   }
   
@@ -457,7 +458,7 @@ h5 {
   }
   
   .bio {
-    margin: 40px 0px 40px 0px;
+    margin: 0px 0px 0px 0px;
   }
   
   .eng-tile-content {

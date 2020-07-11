@@ -1,18 +1,9 @@
 import React, {useState} from 'react'
-import { Fight } from '../assets/fight.jpeg'
 import { useSpring, useTransition, useTrail, animated } from 'react-spring';
 import { useHistory } from 'react-router'
 
 export function About() {
     let history = useHistory()
-    // const [toggle, set] = useState(false)
-    // const topTransitions = useTransition(toggle, null, {
-    //     from: { transform: 'translate3d(0,-200px,0)' },
-    //     enter: { transform: 'translate3d(0,0px,0)' },
-    //     leave: { transform: 'translate3d(0,-200px,0)' },
-    // })
-
-
     // window.set = set
 
     const content = [
@@ -35,15 +26,9 @@ export function About() {
         from: { opacity: 0, x: -100, marginBottom: 0 },
     })
 
-
-
     return (
         <div className="about">
             <div className="hero">
-                {/* {topTransitions.map(({ item, key, props }) => 
-                    // item ? <animated.div style={props}><h1>Angelo Xenakis</h1></animated.div> : null
-                    <animated.div style={props}><h1>Angelo Xenakis</h1></animated.div>
-                )}    */}
                 <div className="bio">
                     <div className="trails-main">
                         <div>
@@ -60,9 +45,6 @@ export function About() {
                 </div>
             </div>
             <hr></hr>
-            <div className="tri-img">
-                <div className="fight-img"></div>
-            </div>
         </div>
     )
 }
