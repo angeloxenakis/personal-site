@@ -1,24 +1,59 @@
-import React from 'react'
-import { linkedIn } from '../assets/linkedin-logo.png'
+import React, {useState} from 'react'
+import { useSpring, useTransition, useTrail, animated } from 'react-spring';
+import { useHistory } from 'react-router'
 
 export function Connect() {
+
+    const content = [
+        <h1>Connect</h1>
+    ]
+
+    const linkTreeLeft = [
+        <div className="link-tree-logo">
+            <div className="linkedin-panel"></div>
+            <h5><a href="https://www.linkedin.com/in/angeloxenakis" target="_blank">Linked In</a></h5>
+        </div>,
+        <div className="link-tree-logo">
+            <div className="github-panel"></div>
+            <h5><a href="https://github.com/angeloxenakis" target="_blank">GitHub</a></h5>
+        </div>,
+        <div className="link-tree-logo">
+            <div className="medium-panel"></div>
+            <h5><a href="https://medium.com/@angeloxenakis" target="_blank">Medium</a></h5>
+        </div>
+    ]
+
+    const config = { mass: 5, tension: 2000, friction: 200 }
+    const [toggle, set] = useState(true)
+    const trail = useTrail(content.length, {
+        config,
+        opacity: toggle ? 1 : 0,
+        x: toggle ? 0 : -100,
+        marginBottom: toggle ? 0 : 0,
+        from: { opacity: 0, x: -100, marginBottom: 0 },
+    })
+
+
     return (
         <div className="link-tree-container">
-            <h1>Connect</h1>
+            {trail.map(({ x, marginBottom, ...rest }, index) => (
+                <animated.div
+                    key={content[index]}
+                    className="trails-text"
+                    style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
+                    <animated.div style={{ marginBottom }}>{content[index]}</animated.div>
+                </animated.div>
+            ))} 
             <div className="link-tree">
                 <div className="link-tree-left">
-                    <div className="link-tree-logo">
-                        <div className="linkedin-panel"></div>
-                        <h5><a href="https://www.linkedin.com/in/angeloxenakis" target="_blank">Linked In</a></h5>
-                    </div>
-                    <div className="link-tree-logo">
-                        <div className="github-panel"></div>
-                        <h5><a href="https://github.com/angeloxenakis" target="_blank">GitHub</a></h5>
-                    </div>
-                    <div className="link-tree-logo">
-                        <div className="medium-panel"></div>
-                        <h5><a href="https://medium.com/@angeloxenakis" target="_blank">Medium</a></h5>
-                    </div>
+                    {trail.map(({ x, marginBottom, ...rest }, index) => (
+                        <animated.div
+                            key={linkTreeLeft[index]}
+                            className="link-tree-logo"
+                            style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
+                            <animated.div style={{ marginBottom }}>{linkTreeLeft[index]}</animated.div>
+                        </animated.div>
+                    ))} 
                 </div>
                 <div className="link-tree-left">
                     <div className="link-tree-logo">
