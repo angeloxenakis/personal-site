@@ -10,9 +10,9 @@ export function About() {
         <h1>Angelo Xenakis</h1>,
         <p className="large-text" onClick={() => history.push('/portfolio')}>Software &</p>, 
         <p className="large-text" onClick={() => history.push('/portfolio')}>Design &</p>, 
-        <p className="large-text" onClick={() => history.push('/portfolio')}>Music &</p>, 
-        <p className="large-text" onClick={() => history.push('/portfolio')}>Fighting &</p>,
-        <p className="large-text"><a href="https://medium.com/@angeloxenakis">Articles</a></p>,
+        <p className="large-text">Music &</p>, 
+        <p className="large-text">Fighting &</p>,
+        <p className="large-text"><a href="https://medium.com/@angeloxenakis" target="_blank">Articles</a></p>,
         <p className="small-text">And calling my blog posts articles because it feels more distinguished</p>
     ]
 
