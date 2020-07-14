@@ -1,11 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useSpring, useTransition, useTrail, animated } from 'react-spring';
 import { useHistory } from 'react-router'
 
 export function Header() {
     let history = useHistory()
     const content = [
-        <div className="nav-btn" onClick={() => history.push('/')}>ABOUT</div>,
+        <div className="nav-btn" onClick={() => history.push('/')}>ABOUT THIS SHIT</div>,
         <div className="nav-btn" onClick={() => history.push('/connect')}>CONNECT</div>,
         <div className="nav-btn" onClick={() => history.push('/portfolio')}>PORTFOLIO</div>,
         <div className="nav-btn"><a href="https://docs.google.com/document/d/1pFqCxwR37b5dYWXmD8NAVhd3Uu94NOhNVQbu7xE4tZY/edit" target="_blank">RESUME</a></div>,
@@ -23,8 +23,26 @@ export function Header() {
     })
 
 
-    return (
-        <div className="nav">
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 620;
+
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+    
+        return () => window.removeEventListener("resize", handleWindowResize);
+      }, []);
+
+    return width < breakpoint ? 
+        <div className="mobile-nav">
+            <div className="home-btn"></div>
+            <div className="connect-btn"></div>
+            <div className="portfolio-btn"></div>
+            <div className="resume-btn"></div>
+            <div className="blog-btn"></div>
+        </div> 
+        :   
+        <div className="nav-btns">
             {trail.map(({ x, marginBottom, ...rest }, index) => (
                 <animated.div
                     key={content[index]}
@@ -33,6 +51,5 @@ export function Header() {
                     <animated.div style={{ marginBottom }}>{content[index]}</animated.div>
                 </animated.div>
             ))} 
-        </div>
-    )
+        </div>;
 }

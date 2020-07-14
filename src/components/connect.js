@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { useSpring, useTransition, useTrail, animated } from 'react-spring';
 import { useHistory } from 'react-router'
 
@@ -15,6 +15,7 @@ export function Connect() {
         // <p className="large-text"><a href="https://medium.com/@angeloxenakis">Spotify</a></p>,
         // <p className="large-text"><a href="https://medium.com/@angeloxenakis">Apple Music</a></p>,
     ]
+
 
     const config = { mass: 5, tension: 2000, friction: 200 }
     const [toggle, set] = useState(true)
