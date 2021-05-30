@@ -3,6 +3,7 @@
   background-color: rgba(0,0,0, 0.8);
   height: 100vh;
   overflow: scroll;
+  color: whitesmoke
 }
 
 body {
@@ -10,7 +11,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 .nav {
@@ -21,10 +21,10 @@ body {
   background-color: rgba(255,255,255, 0.3);
 }
 
-.nav a {
+a {
   text-decoration: none;
   font-weight: bold;
-  color: #010101;
+  color: whitesmoke;
 }
 
 .nav-btn {
@@ -68,6 +68,25 @@ body {
   align-items: center;
 }
 
+.resume h5 {
+  padding: 24px 0px 24px 0px;
+  text-align: center;
+}
+
+li {
+  margin: 4px 0px 4px 0px
+}
+
+.resume-header {
+  width: 100%;
+  text-align: right;
+}
+
+h6 {
+  margin: 24px 0px -32px 0px;
+  font-size: 14px;
+}
+
 hr {
   width: 30%;
   margin:auto;
@@ -84,7 +103,6 @@ h1 {
 h2 {
   font-size: 56px;
   margin:0px 0px 0px 0px;
-  color: #010101;
 }
 
 h3 {
@@ -102,36 +120,6 @@ h4 {
 h5 {
   font-size: 16px;
   font-weight: normal;
-}
-
-.bio a {
-  text-decoration: none;
-  color: #010101;
-}
-
-p {
-  margin: 0px;
-}
-
-.large-text {
-  font-size: 56px;
-  margin: 8px 0px 8px 0px;
-  cursor: pointer;
-}
-
-.medium-text {
-  font-size: 32px;
-}
-
-.small-text {
-  width: 35%;
-  font-size: 20px;
-  line-height: 1.6;
-  padding: 0px 0px 20px 0px;
-}
-
-.tiny-text {
-  font-size: 8px;
 }
 
 .eng-tile {

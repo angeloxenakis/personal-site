@@ -8,7 +8,7 @@ export function Header() {
         <div className="nav-btn" onClick={() => history.push('/')}>ABOUT</div>,
         <div className="nav-btn" onClick={() => history.push('/connect')}>CONNECT</div>,
         <div className="nav-btn" onClick={() => history.push('/portfolio')}>PORTFOLIO</div>,
-        <div className="nav-btn"><a href="https://docs.google.com/document/d/1pFqCxwR37b5dYWXmD8NAVhd3Uu94NOhNVQbu7xE4tZY/edit" target="_blank">RESUME</a></div>,
+        <div className="nav-btn" onClick={() => history.push('/resume')}>RESUME</div>,
         <div className="nav-btn"><a href="https://medium.com/@angeloxenakis" target="_blank">BLOG</a></div>,
     ]
 

@@ -5,15 +5,11 @@ import { useHistory } from 'react-router'
 export function Connect() {
 
     const content = [
-        <h1>Connect</h1>,
-        <p className="large-text"><a href="https://www.linkedin.com/in/angeloxenakis/" target="_blank">Linked In &</a></p>,
-        <p className="large-text"><a href="https://github.com/angeloxenakis/" target="_blank">GitHub &</a></p>,
-        <p className="large-text"><a href="https://medium.com/@angeloxenakis" target="_blank">Medium &</a></p>,
-        <p className="large-text"><a href="https://dribbble.com/AngeloTheThird" target="_blank">Dribbble &</a></p>,
-        <p className="large-text"><a href="https://behance.com" traget="_blank">Behance</a></p>,
-        // <p className="large-text"><a href="https://medium.com/@angeloxenakis">YouTube</a></p>,
-        // <p className="large-text"><a href="https://medium.com/@angeloxenakis">Spotify</a></p>,
-        // <p className="large-text"><a href="https://medium.com/@angeloxenakis">Apple Music</a></p>,
+        <h1>CONNECT</h1>,
+        <h4><a href="https://www.linkedin.com/in/angeloxenakis/" target="_blank">LINKED IN</a></h4>,
+        <h4><a href="https://github.com/angeloxenakis/" target="_blank">GITHUB</a></h4>,
+        <h4><a href="https://medium.com/@angeloxenakis" target="_blank">MEDIUM</a></h4>,
+        <h4><a href="https://medium.com/@angeloxenakis" target="_blank">INSTAGRAM</a></h4>,
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }
