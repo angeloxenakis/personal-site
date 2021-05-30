@@ -18,6 +18,8 @@ function App() {
 					<Route exact path="/portfolio" component={Portfolio}/>
 				</div>
 			</BrowserRouter>
+			<hr></hr>
+			<p class="footer-tag">Built in React.js</p>
 		</div>
 	);
 }
