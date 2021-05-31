@@ -41,7 +41,6 @@ export function Connect() {
                     </div>
                 </div>
             </div>
-            <hr></hr>
         </div>
     )
 }

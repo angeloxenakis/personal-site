@@ -56,7 +56,7 @@ a {
   justify-content: center;
   /* margin: auto; */
   width: 100%;
-  height: 85vh;
+  height: 87vh;
 }
 
 .about {
@@ -90,8 +90,8 @@ h6 {
 hr {
   width: 30%;
   margin:auto;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  /* margin-top: 24px; */
+  margin-bottom: 8px;
 }
 
 h1 {
@@ -123,16 +123,24 @@ h5 {
 }
 
 .eng-tile {
-  padding: 16px 0px 16px 0px;
+  padding: 32px 0px 32px 0px;
+}
+
+.eng-tile-content {
+  display: flex;
+  justify-content: space-around;
 }
 
 .eng-tile-info {
-  font-size: 18px;
+  width: 40%;
   line-height: 1.5;
 }
 
+.eng-tile-herp {
+  width: 45%;
+}
+
 .eng-tile-info a {
-  color: #010101;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -154,9 +162,49 @@ h5 {
   background-image: url('./assets/fight.jpeg');
 }
 
-.portfolio {
+.portfolio-header {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%
 }
 
+.portfolio {
+  padding: 28px 0px 28px 0px;
+  /* border: white solid 1px; */
+  /* width: 100% */
+  text-align: left;
+}
+
+.btn {
+  font-size: 24px;
+  width: 25%;
+  color: whitesmoke;
+  background-color: transparent;
+  border: none;
+  padding: 16px;
+}
+
+.selected-btn {
+  font-size: 24px;
+  font-weight: bold;
+  width: 25%;
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  border-bottom: whitesmoke solid 1px;
+  padding: 16px;
+}
+
+.footer {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: center;
+}
+
+h7 {
+  font-size: 12px;
+}
 
 .link-tree-container {
   margin: auto;
@@ -238,15 +286,6 @@ h5 {
   ;
 }
 
-.portfolio-panel {
-  margin: auto;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background-color: #010101;
-  background-size: contain;
-  ;
-}
 
 .dribbble-panel {
   margin: auto;
@@ -370,7 +409,6 @@ h5 {
     width: 30%;
     margin:auto;
     margin-top: 8px;
-    margin-bottom: 8px;
   }
   
   h1 {
@@ -467,8 +505,7 @@ h5 {
     background-image: url('./assets/fight.jpeg');
   }
   
-  .portfolio {
-  }
+
   
   
   .link-tree-container {
@@ -550,16 +587,7 @@ h5 {
     background-size: contain;
     ;
   }
-  
-  .portfolio-panel {
-    margin: auto;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: #010101;
-    background-size: contain;
-    ;
-  }
+
   
   .dribbble-panel {
     margin: auto;
@@ -619,7 +647,5 @@ h5 {
     width: 100%;
   }
 
-  .footer-tag {
-    color:rgba(0,0,0, 0.2)
-  }
+
 }

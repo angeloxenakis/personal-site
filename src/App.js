@@ -5,7 +5,7 @@ import { Route } from 'react-router'
 import { Header } from './components/header'
 import { About } from './components/about'
 import { Connect } from './components/connect'
-import { Portfolio } from './components/portfolio';
+import { Portfolio } from './components/Portfolio';
 import { Resume } from './components/Resume';
 
 function App() {
@@ -20,8 +20,10 @@ function App() {
 					<Route exact path="/resume" component={Resume}/>
 				</div>
 			</BrowserRouter>
-			<hr></hr>
-			<p class="footer-tag">Built in React.js</p>
+			<div className="footer">
+				<hr></hr>
+				<h7>Built in React.js</h7>
+			</div>
 		</div>
 	);
 }

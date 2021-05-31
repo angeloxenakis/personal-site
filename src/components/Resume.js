@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
-import { useSpring, useTransition, useTrail, animated } from 'react-spring';
-import { useHistory } from 'react-router'
+import { useTrail, animated } from 'react-spring';
 
 export function Resume() {
 
-    const content = [
+    const resumeContent = [
         <div className="resume-header">
             <h6><a href="https://docs.google.com/document/d/1pFqCxwR37b5dYWXmD8NAVhd3Uu94NOhNVQbu7xE4tZY/edit" target="_blank">VIEW RESUME ON GOOGLE DOCS</a></h6>
         </div>,
@@ -35,19 +34,19 @@ export function Resume() {
         <h2>EDUCATION</h2>,
         
         <div>
-            <li>Flatiron School - Fifteen Week Immersive Bootcamp: Full stack with React, Redux, & Ruby on Rails</li>
-            <li>Austin Coding Academy - Eight Week Bootcamp: Intro to Frontend</li>
-            <li>PSM I - Professional Scrum Master certification from www.scrum.org</li>
+            <li><strong>Flatiron School</strong> - Fifteen Week Immersive Bootcamp: Full stack with React, Redux, & Ruby on Rails</li>
+            <li><strong>Austin Coding Academy</strong> - Eight Week Bootcamp: Intro to Frontend</li>
+            <li><strong>PSM I</strong> - Professional Scrum Master certification from www.scrum.org</li>
         </div>,
 
 
         <h2>SKILLS</h2>,
                 
         <div>
-            <li>Technical: HTML/CSS/JS, Ruby on Rails, React, Redux, NodeJS, SQL/GraphQL, Automated QA, Continuous Integration.</li>
-            <li>UX/UI & Product: Backlog management, Sketch, Figma, Adobe Suite,  style guides, icon sets, spec creation, hifi designs.</li>
-            <li>Project Management:  Agile & Scrum, data analysis, leading & coaching, JIRA, Wrike, Trello, Aha!</li>
-            <li>Leadership: Teaching & Training, coaching, personal development, performance management.</li>
+            <li><strong>Technical:</strong> HTML/CSS/JS, Ruby on Rails, React, Redux, NodeJS, SQL/GraphQL, Automated QA, Continuous Integration.</li>
+            <li><strong>UX/UI & Product:</strong> Backlog management, Sketch, Figma, Adobe Suite,  style guides, icon sets, spec creation, hifi designs.</li>
+            <li><strong>Project Management:</strong> Agile & Scrum, data analysis, leading & coaching, JIRA, Wrike, Trello, Aha!</li>
+            <li><strong>Leadership:</strong> Teaching & Training, coaching, personal development, performance management.</li>
         </div>,
     
         <h5><a href="https://docs.google.com/document/d/1pFqCxwR37b5dYWXmD8NAVhd3Uu94NOhNVQbu7xE4tZY/edit" target="_blank">VIEW RESUME ON GOOGLE DOCS</a></h5>
@@ -55,7 +54,7 @@ export function Resume() {
 
     const config = { mass: 5, tension: 2000, friction: 200 }
     const [toggle, set] = useState(true)
-    const trail = useTrail(content.length, {
+    const trail = useTrail(resumeContent.length, {
         config,
         opacity: toggle ? 1 : 0,
         x: toggle ? 0 : -100,
@@ -63,21 +62,16 @@ export function Resume() {
         from: { opacity: 0, x: -100, marginBottom: 0 },
     })
 
-
     return (
         <div className="resume">
-            <div className="trails-main">
-                <div>
-                    {trail.map(({ x, marginBottom, ...rest }, index) => (
-                        <animated.div
-                            key={content[index]}
-                            className="trails-text"
-                            style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-                            <animated.div style={{ marginBottom }}>{content[index]}</animated.div>
-                        </animated.div>
-                    ))} 
-                </div>
-            </div>
+            {trail.map(({ x, marginBottom, ...rest }, index) => (
+                <animated.div
+                    key={resumeContent[index]}
+                    className="trails-text"
+                    style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
+                    <animated.div style={{ marginBottom }}>{resumeContent[index]}</animated.div>
+                </animated.div>
+            ))} 
         </div>
     )
 }
