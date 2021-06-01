@@ -4,17 +4,19 @@ import { useHistory } from 'react-router'
 import { EngineeringPortfolio } from './EngineeringPortfolio'
 import { DesignPortfolio } from './DesignPortfolio'
 import { MusicPortfolio } from './MusicPortfolio'
+import '../style/Portfolio.css';
+
 
 export function Portfolio() {
 
     const [portfolioOption, setPortfolio] = useState("engineering")
 
     const content = [
-        <div className="portfolio-header">
-            <button className="btn" onClick={(e) => handleSelect("design", e)}>DESIGN</button>
-            <button className="selected-btn" onClick={(e) => handleSelect("engineering", e)}>ENGINEERING</button>
-            <button className="btn" onClick={(e) => handleSelect("music", e)}>MUSIC</button>
-        </div>
+        // <div className="portfolio-header">
+        //     <button className="btn" onClick={(e) => handleSelect("design", e)}>DESIGN</button>
+        //     <button className="selected-btn" onClick={(e) => handleSelect("engineering", e)}>ENGINEERING</button>
+        //     <button className="btn" onClick={(e) => handleSelect("music", e)}>MUSIC</button>
+        // </div>
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }

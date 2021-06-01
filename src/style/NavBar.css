@@ -1,0 +1,45 @@
+.nav {
+    color: whitesmoke;
+    display: flex;
+    margin: 0px;
+    padding: 4px;
+    background-color: rgba(255,255,255, 0.3);
+  }
+  
+  .nav-btn {
+    text-align: center;
+    width: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px;
+  }
+
+  h7 {
+    cursor: pointer;
+  }
+  
+  .nav-btn-clicked {
+    text-align: center;
+    width: 70px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 16px;
+    border-bottom: 1px solid #010101;
+  }
+
+@media (max-width: 800px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    text-align: center;
+    width: 20%;
+    font-size: 12px;
+    padding: 16px;
+  }
+
+  h7 {
+    font-size: 10px;
+  }
+}

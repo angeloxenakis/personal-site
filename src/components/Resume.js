@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { useTrail, animated } from 'react-spring';
+import '../style/Resume.css';
 
 export function Resume() {
 

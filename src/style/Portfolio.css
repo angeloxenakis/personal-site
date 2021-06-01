@@ -1,0 +1,31 @@
+.portfolio-header {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.portfolio {
+  padding: 28px 0px 28px 0px;
+  text-align: left;
+}
+
+.btn {
+  font-size: 24px;
+  width: 25%;
+  color: whitesmoke;
+  background-color: transparent;
+  border: none;
+  padding: 16px;
+}
+
+.selected-btn {
+  font-size: 24px;
+  font-weight: bold;
+  width: 25%;
+  background-color: transparent;
+  color: whitesmoke;
+  border: none;
+  border-bottom: whitesmoke solid 1px;
+  padding: 16px;
+}

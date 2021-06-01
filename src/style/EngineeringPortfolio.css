@@ -1,0 +1,57 @@
+.eng-tile {
+  padding: 0px 0px 56px 0px;
+}
+
+.eng-tile-hero {
+  width: 40%;
+}
+
+.video {
+  width: 100%;
+  height: 20vw;
+  border-radius: 16px;
+}
+
+.eng-tile-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.eng-tile-info {
+  width: 40%;
+  line-height: 1.5;
+}
+
+.eng-tile-info a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+hr {
+  margin-bottom: 64px;
+}
+
+@media (max-width: 800px) {
+  .eng-tile-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .eng-tile-hero {
+    width: 100%;
+  }
+
+  .video {
+    width: 100%;
+    height: 315px;
+  }
+
+  .eng-tile-info {
+    width: 100%;
+  }
+}

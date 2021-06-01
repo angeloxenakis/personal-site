@@ -1,15 +1,16 @@
 import React, {useState} from 'react'
-import { useSpring, useTransition, useTrail, animated } from 'react-spring';
+import { useTrail, animated } from 'react-spring';
 import { useHistory } from 'react-router'
+import '../style/NavBar.css';
 
-export function Header() {
+export function NavBar() {
     let history = useHistory()
     const content = [
-        <div className="nav-btn" onClick={() => history.push('/')}>HOME</div>,
-        <div className="nav-btn" onClick={() => history.push('/portfolio')}>PORTFOLIO</div>,
-        <div className="nav-btn" onClick={() => history.push('/resume')}>RESUME</div>,
-        <div className="nav-btn" onClick={() => history.push('/blog')}>BLOG</div>,
-        <div className="nav-btn" onClick={() => history.push('/connect')}>CONNECT</div>,
+        <div className="nav-btn"><h7 onClick={() => history.push('/')}>HOME</h7></div>,
+        <div className="nav-btn"><h7 onClick={() => history.push('/portfolio')}>PORTFOLIO</h7></div>,
+        <div className="nav-btn"><h7 onClick={() => history.push('/resume')}>RESUME</h7></div>,
+        <div className="nav-btn"><h7 onClick={() => history.push('/blog')}>BLOG</h7></div>,
+        <div className="nav-btn"><h7 onClick={() => history.push('/connect')}>CONNECT</h7></div>,
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }
