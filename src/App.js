@@ -7,6 +7,7 @@ import { About } from './components/about'
 import { Connect } from './components/connect'
 import { Portfolio } from './components/Portfolio';
 import { Resume } from './components/Resume';
+import { Blog } from './components/Blog';
 
 function App() {
 	return (
@@ -15,9 +16,10 @@ function App() {
 				<Header/>
 				<div className="container">
 					<Route exact path="/" component={About}/>
-					<Route exact path="/connect" component={Connect}/>
 					<Route exact path="/portfolio" component={Portfolio}/>
 					<Route exact path="/resume" component={Resume}/>
+					<Route exact path="/blog" component={Blog}/>
+					<Route exact path="/connect" component={Connect}/>
 				</div>
 			</BrowserRouter>
 			<div className="footer">

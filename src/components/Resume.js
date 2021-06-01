@@ -4,11 +4,11 @@ import { useTrail, animated } from 'react-spring';
 export function Resume() {
 
     const resumeContent = [
-        <div className="resume-header">
-            <h6><a href="https://docs.google.com/document/d/1pFqCxwR37b5dYWXmD8NAVhd3Uu94NOhNVQbu7xE4tZY/edit" target="_blank">VIEW RESUME ON GOOGLE DOCS</a></h6>
-        </div>,
         <div>
-            <h2>EXPERIENCE</h2>
+            <div className="resume-header">
+                <h2>EXPERIENCE</h2>
+                <h6><a href="https://docs.google.com/document/d/1pFqCxwR37b5dYWXmD8NAVhd3Uu94NOhNVQbu7xE4tZY/edit" target="_blank">VIEW RESUME ON GOOGLE DOCS</a></h6>
+            </div>
             <h4>Lead Instructor - Software Engineering  // Flatiron School // 06/2020 - Current</h4>
             <li>Delivery of lectures and facilitation of fast paced code bootcamp curriculum around full stack React, Redux, & Rails.</li>
             <li>Plan mid-size software projects and execute them on a tight timeframe.</li>

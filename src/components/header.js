@@ -5,11 +5,11 @@ import { useHistory } from 'react-router'
 export function Header() {
     let history = useHistory()
     const content = [
-        <div className="nav-btn" onClick={() => history.push('/')}>ABOUT</div>,
-        <div className="nav-btn" onClick={() => history.push('/connect')}>CONNECT</div>,
+        <div className="nav-btn" onClick={() => history.push('/')}>HOME</div>,
         <div className="nav-btn" onClick={() => history.push('/portfolio')}>PORTFOLIO</div>,
         <div className="nav-btn" onClick={() => history.push('/resume')}>RESUME</div>,
-        <div className="nav-btn"><a href="https://medium.com/@angeloxenakis" target="_blank">BLOG</a></div>,
+        <div className="nav-btn" onClick={() => history.push('/blog')}>BLOG</div>,
+        <div className="nav-btn" onClick={() => history.push('/connect')}>CONNECT</div>,
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }
