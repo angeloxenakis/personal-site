@@ -7,8 +7,8 @@ export function EngineeringPortfolio() {
 
     const content = [
         <div className="eng-tile">
-            <h2>MARS WEATHER APP</h2>
-            <h5>React, Redux, Ruby on Rails</h5>
+            <h2>XENLOOP-5T</h2>
+            <h5>React, Node</h5>
             <div className="eng-tile-content">
                 <div className="eng-tile-hero">
                     <iframe className="video" src="https://www.youtube.com/embed/dsOUQrqS-Ws" frameborder="0" 
@@ -17,9 +17,8 @@ export function EngineeringPortfolio() {
                 </div>
                 <div className="eng-tile-info">
                     <p>
-                        The Mars Weather App gives you the most recent weather data received form Mars weather station, Insight.
-                        Utilizing Nasa, and Open Weather's APIs, we feed data into the app that gives you the ability to compare
-                        you current local weather conditions with the climate of The Red Planet.
+                        The XenLoop-5T is a software audio loop station designed to enhance live musical performance. Record and 
+                        playback audio on 5 separate tracks and conrtol individual track volume and effects.
                     </p>
                     <br></br>
                     <a href="https://github.com/angeloxenakis/mars-weather-app" target="_blank">GitHub</a>
@@ -28,8 +27,8 @@ export function EngineeringPortfolio() {
         </div>,
         <hr></hr>,
         <div className="eng-tile">
-            <h2>MARS WEATHER APP</h2>
-            <h5>React, Redux, Ruby on Rails</h5>
+            <h2>THIS SITE</h2>
+            <h5>React</h5>
             <div className="eng-tile-content">
                 <div className="eng-tile-hero">
                     <iframe className="video" src="https://www.youtube.com/embed/dsOUQrqS-Ws" frameborder="0" 
@@ -38,30 +37,9 @@ export function EngineeringPortfolio() {
                 </div>
                 <div className="eng-tile-info">
                     <p>
-                        The Mars Weather App gives you the most recent weather data received form Mars weather station, Insight.
-                        Utilizing Nasa, and Open Weather's APIs, we feed data into the app that gives you the ability to compare
-                        you current local weather conditions with the climate of The Red Planet.
-                    </p>
-                    <br></br>
-                    <a href="https://github.com/angeloxenakis/mars-weather-app" target="_blank">GitHub</a>
-                </div>
-            </div>
-        </div>,
-        <hr></hr>,
-            <div className="eng-tile">
-            <h2>MARS WEATHER APP</h2>
-            <h5>React, Redux, Ruby on Rails</h5>
-            <div className="eng-tile-content">
-                <div className="eng-tile-hero">
-                    <iframe className="video" src="https://www.youtube.com/embed/dsOUQrqS-Ws" frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                </div>
-                <div className="eng-tile-info">
-                    <p>
-                        The Mars Weather App gives you the most recent weather data received form Mars weather station, Insight.
-                        Utilizing Nasa, and Open Weather's APIs, we feed data into the app that gives you the ability to compare
-                        you current local weather conditions with the climate of The Red Planet.
+                        This site itself is built and styled 100% by me using React.js and native CSS. No use of any styling library
+                        or prebuilt components. The only library it does take advantage of is the React Spring library for the animation
+                        transistions, which render the elements through a function. Responsive design that is mobile friendly.
                     </p>
                     <br></br>
                     <a href="https://github.com/angeloxenakis/mars-weather-app" target="_blank">GitHub</a>
