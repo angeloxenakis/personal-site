@@ -7,7 +7,7 @@ export function Blog() {
 
     const blogContent = [
         <div className="blog-container">
-            <a href="https://blog.usejournal.com/job-hunters-cookbook-6c033a295f38" target="_blank"><h2>JOB HUNTER'S COOKBOOK</h2></a>
+            <a href="https://blog.usejournal.com/job-hunters-cookbook-6c033a295f38" target="_blank"><h1>JOB HUNTER'S COOKBOOK</h1></a>
             <div className="blog-hero">
                 <a href="https://blog.usejournal.com/job-hunters-cookbook-6c033a295f38" target="_blank">
                     <img className="blog-hero-img" src="https://miro.medium.com/max/3904/1*BiHCImmS4dviAD_JXlCplQ.png"/>
@@ -23,21 +23,33 @@ export function Blog() {
         </div>,
         <hr></hr>,
         <div className="blog-container">
-            <h2>OTHER POSTS</h2>
+            <h2>PROFESSIONAL</h2>
             <div className="blog-index">
                 <div className="blog-tile">
                     <a href="https://medium.com/@angeloxenakis/software-engineers-the-modern-typists-3ee96c99a4c4" target="_blank"><h4>Software Engineers: The Modern Typists</h4></a>
                     <a href="https://medium.com/@angeloxenakis/software-engineers-the-modern-typists-3ee96c99a4c4" target="_blank">
                         <h4><img src="https://miro.medium.com/max/2700/1*RriXsb60otceQCh2pfPTEw.jpeg"/></h4>
                     </a>
-                    <p>An analagous comparison of the workforce's resistance to learning how to type in the 1920's, with the restsitance to learing how to code today.</p>
+                    <p>An analagous comparison of the workforce's resistance to learning how to type in the 1920's, with the resistance to learning how to code today.</p>
                 </div>
                 <div className="blog-tile">
                     <a href="https://medium.com/@angeloxenakis/a-beginners-tale-of-over-engineering-9a3a4a3c0fa2" target="_blank"><h4>A Beginner's Tale of Over Engineering</h4></a>
                     <a href="https://medium.com/@angeloxenakis/a-beginners-tale-of-over-engineering-9a3a4a3c0fa2" target="_blank">
                         <img src="https://miro.medium.com/max/1658/1*2azqR0AODUCgsgQBY4H9rg.png"/>
                     </a>
-                    <p>Reflections on early advice from a senor engineer.</p>
+                    <p>Reflections on early advice from a senior engineer.</p>
+                </div>
+            </div>
+        </div>,
+        <div className="blog-container">
+            <h2>COMBAT SPORTS</h2>
+            <div className="blog-index">
+                <div className="blog-tile">
+                    <a href="https://angeloxenakis.medium.com/the-science-of-low-kicks-part-1-a4c853272671" target="_blank"><h4>The Science of Low Kicks: Part 1</h4></a>
+                    <a href="https://angeloxenakis.medium.com/the-science-of-low-kicks-part-1-a4c853272671" target="_blank">
+                        <h4><img src="https://miro.medium.com/max/3362/1*BIYQdGc73dxhRpSFNReB1A.jpeg"/></h4>
+                    </a>
+                    <p>A technical breakdown of how kicking to the legs can be an effective path to victory.</p>
                 </div>
             </div>
         </div>

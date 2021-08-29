@@ -10,7 +10,7 @@ export function Connect() {
         <h4><a href="https://www.linkedin.com/in/angeloxenakis/" target="_blank">LINKED IN</a></h4>,
         <h4><a href="https://github.com/angeloxenakis/" target="_blank">GITHUB</a></h4>,
         <h4><a href="https://medium.com/@angeloxenakis" target="_blank">MEDIUM</a></h4>,
-        <h4><a href="https://instagram.com/@angeloxenakis" target="_blank">INSTAGRAM</a></h4>,
+        <h4><a href="https://instagram.com/angeloxenakis" target="_blank">INSTAGRAM</a></h4>,
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }

@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
 import { useTrail, animated } from 'react-spring';
 import { useHistory } from 'react-router'
+import { SiteImg } from '../assets/site-img.png'
 import '../style/EngineeringPortfolio.css';
+
 
 export function EngineeringPortfolio() {
 
@@ -18,10 +20,10 @@ export function EngineeringPortfolio() {
                 <div className="eng-tile-info">
                     <p>
                         The XenLoop-5T is a software audio loop station designed to enhance live musical performance. Record and 
-                        playback audio on 5 separate tracks and conrtol individual track volume and effects.
+                        playback audio on 5 separate tracks and control individual track volume and effects.
                     </p>
                     <br></br>
-                    <a href="https://github.com/angeloxenakis/mars-weather-app" target="_blank">GitHub</a>
+                    <a href="https://github.com/angeloxenakis/XenLoop-5T" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>,
@@ -30,11 +32,11 @@ export function EngineeringPortfolio() {
             <h2>THIS SITE</h2>
             <h5>React</h5>
             <div className="eng-tile-content">
-                <div className="eng-tile-hero">
+                {/* <div className="eng-tile-hero">
                     <iframe className="video" src="https://www.youtube.com/embed/dsOUQrqS-Ws" frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
-                </div>
+                </div> */}
                 <div className="eng-tile-info">
                     <p>
                         This site itself is built and styled 100% by me using React.js and native CSS. No use of any styling library
@@ -42,7 +44,7 @@ export function EngineeringPortfolio() {
                         transistions, which render the elements through a function. Responsive design that is mobile friendly.
                     </p>
                     <br></br>
-                    <a href="https://github.com/angeloxenakis/mars-weather-app" target="_blank">GitHub</a>
+                    <a href="https://github.com/angeloxenakis/personal-site" target="_blank">GitHub</a>
                 </div>
             </div>
         </div>
