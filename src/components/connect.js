@@ -6,7 +6,6 @@ export function Connect() {
 
     const connectContent = [
         <h1>CONNECT</h1>,
-        <h4>ANGELOXENAKIS@GMAIL.COM</h4>,
         <h4><a href="https://www.linkedin.com/in/angeloxenakis/" target="_blank">LINKED IN</a></h4>,
         <h4><a href="https://github.com/angeloxenakis/" target="_blank">GITHUB</a></h4>,
         <h4><a href="https://medium.com/@angeloxenakis" target="_blank">MEDIUM</a></h4>,
