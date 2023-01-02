@@ -3,10 +3,10 @@ import './App.css';
 import { BrowserRouter } from 'react-router-dom'
 import { Route } from 'react-router'
 import { NavBar } from './components/NavBar'
-import { Home } from './components/Home'
+import { Home } from './views/Home'
 import { Connect } from './components/Connect'
-import { Portfolio } from './components/Portfolio';
-import { Resume } from './components/Resume';
+import { Portfolio } from './views/Portfolio';
+import { Resume } from './views/Resume';
 import { Blog } from './components/Blog';
 
 function App() {

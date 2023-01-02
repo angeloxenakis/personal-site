@@ -16,6 +16,8 @@ body {
 .container {
   margin: auto;
   width: 80%;
+  height: calc(100vh - 160px);
+  overflow-y: scroll;
 }
 
 hr {

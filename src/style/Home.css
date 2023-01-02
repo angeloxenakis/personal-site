@@ -4,5 +4,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 87vh;
+  height: calc(100vh - 160px);
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+h4 {
+  margin-bottom: 16px;
 }
