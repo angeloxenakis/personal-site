@@ -8,10 +8,10 @@ export function Home() {
 
     const homeDetails = [
         <h1>ANGELO XENAKIS</h1>,
+        <h4>PRODUCT DESIGNER</h4>,
+        <h4>SCRUM MASTER</h4>,
         <h4>SOFTWARE ENGINEER</h4>,
         <h4>FULL STACK INSTRUCTOR</h4>,
-        <h4>DESIGNER & ARTIST</h4>,
-        <h4>HOBBYIST MUSICIAN</h4>,
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }

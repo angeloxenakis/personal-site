@@ -6,11 +6,11 @@ import '../style/NavBar.css';
 export function NavBar() {
     let history = useHistory()
     const content = [
-        <div className="nav-btn"><h7 onClick={() => history.push('/')}>HOME</h7></div>,
-        <div className="nav-btn"><h7 onClick={() => history.push('/portfolio')}>PORTFOLIO</h7></div>,
-        <div className="nav-btn"><h7 onClick={() => history.push('/resume')}>RESUME</h7></div>,
-        <div className="nav-btn"><h7 onClick={() => history.push('/blog')}>BLOG</h7></div>,
-        <div className="nav-btn"><h7 onClick={() => history.push('/connect')}>CONNECT</h7></div>,
+        <div className="nav-btn" onClick={() => history.push('/')}><h7>HOME</h7></div>,
+        <div className="nav-btn" onClick={() => history.push('/portfolio')}><h7>PORTFOLIO</h7></div>,
+        <div className="nav-btn" onClick={() => history.push('/resume')}><h7>RESUME</h7></div>,
+        <div className="nav-btn" onClick={() => history.push('/blog')}><h7>BLOG</h7></div>,
+        <div className="nav-btn" onClick={() => history.push('/connect')}><h7>CONNECT</h7></div>,
     ]
 
     const config = { mass: 5, tension: 2000, friction: 200 }

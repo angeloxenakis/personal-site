@@ -24,7 +24,7 @@ function App() {
 			</BrowserRouter>
 			<div className="footer">
 				<hr></hr>
-				<h7>Built in React.js</h7>
+				<h7>Built in React.js by me, Angelo Xenakis</h7>
 			</div>
 		</div>
 	);

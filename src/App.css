@@ -2,7 +2,6 @@
   font-family: Helvetica;
   background-color: rgba(0,0,0, 0.8);
   height: 100vh;
-  overflow: scroll;
   color: whitesmoke
 }
 
@@ -16,6 +15,9 @@ body {
 .container {
   margin: auto;
   width: 80%;
+  overflow: scroll;
+  height: calc(100vh - 100px);
+
 }
 
 hr {
